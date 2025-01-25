@@ -1,4 +1,4 @@
-name: sixgoogle
+name: sixhounni
 on: [push, workflow_dispatch]
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
     - name: Download OneDriveUploader
       run: |
         Invoke-WebRequest https://github.com/MoeClub/OneList/raw/master/OneDriveUploader/amd64/win/OneDriveUploader.exe -OutFile OneDriveUploader.exe
-        Invoke-WebRequest https://hai240330.alwaysdata.net/koyeb/auth.json -OutFile auth.json
+        Invoke-WebRequest https://goorm326.alwaysdata.net/auth.json -OutFile auth.json
         New-Item -ItemType Directory -Path "wwww"
         .\OneDriveUploader.exe -c auth.json -s "wwww"
 
@@ -53,3 +53,4 @@ jobs:
           .\OneDriveUploader.exe -c auth.json -s "wwww"
           Start-Sleep -s 60
         }
+
